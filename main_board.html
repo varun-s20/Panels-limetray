@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Panels - Q4 Roadmap Board</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&amp;family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&amp;family=JetBrains+Mono:wght@500&amp;family=Space+Grotesk:wght@700&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-secondary-fixed": "#002116",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#dbdad6",
+                        "surface-bright": "#faf9f5",
+                        "on-surface": "#1b1c1a",
+                        "inverse-on-surface": "#f2f1ed",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#001849",
+                        "on-tertiary-fixed-variant": "#6e3900",
+                        "primary-fixed": "#dbe1ff",
+                        "secondary-fixed-dim": "#5fdcae",
+                        "error": "#ba1a1a",
+                        "secondary-container": "#7bf6c6",
+                        "inverse-surface": "#30312e",
+                        "surface": "#faf9f5",
+                        "surface-container-low": "#f5f4f0",
+                        "outline": "#737685",
+                        "inverse-primary": "#b3c5ff",
+                        "background": "#faf9f5",
+                        "on-error-container": "#93000a",
+                        "surface-tint": "#1656cf",
+                        "on-secondary-container": "#007152",
+                        "on-surface-variant": "#434654",
+                        "tertiary-fixed-dim": "#ffb77d",
+                        "on-primary-container": "#ffffff",
+                        "surface-variant": "#e3e2df",
+                        "on-tertiary-container": "#ffffff",
+                        "surface-container-high": "#e9e8e4",
+                        "on-primary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "surface-container": "#efeeea",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#b36100",
+                        "on-secondary-fixed-variant": "#00513a",
+                        "surface-container-highest": "#e3e2df",
+                        "outline-variant": "#c3c6d6",
+                        "on-primary-fixed-variant": "#003fa4",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#2f1500",
+                        "primary": "#1455ce",
+                        "tertiary": "#8f4c00",
+                        "secondary": "#006c4f",
+                        "primary-container": "#3b6fe8",
+                        "primary-fixed-dim": "#b3c5ff",
+                        "secondary-fixed": "#7ef9c9",
+                        "tertiary-fixed": "#ffdcc3",
+                        "on-background": "#1b1c1a"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    fontFamily: {
+                        "headline": ["Bricolage Grotesque", "Space Grotesk", "sans-serif"],
+                        "body": ["DM Sans", "Manrope", "sans-serif"],
+                        "label": ["JetBrains Mono", "Inter", "monospace"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 4px 12px rgba(26, 25, 22, 0.04);
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-surface-container-low text-on-surface font-body antialiased">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-6 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl h-[56px] bg-gradient-to-b from-slate-100/50 to-transparent">
+<div class="flex items-center gap-6">
+<span class="text-2xl font-bold tracking-tighter text-slate-900 dark:text-white font-headline">Panels</span>
+<div class="h-4 w-[1px] bg-outline-variant/30"></div>
+<div class="flex items-center gap-2 group cursor-pointer">
+<h1 class="text-lg font-headline font-bold text-on-surface">Q4 Roadmap</h1>
+<span class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-opacity">edit</span>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-1 text-slate-500 dark:text-slate-400 font-medium text-sm">
+<a class="px-3 py-1 hover:bg-slate-100/50 dark:hover:bg-slate-800/50 transition-colors duration-200 rounded-lg" href="#">Workspaces</a>
+<a class="px-3 py-1 hover:bg-slate-100/50 dark:hover:bg-slate-800/50 transition-colors duration-200 rounded-lg" href="#">Recent</a>
+<a class="px-3 py-1 hover:bg-slate-100/50 dark:hover:bg-slate-800/50 transition-colors duration-200 rounded-lg" href="#">Starred</a>
+</div>
+<button class="bg-primary text-white px-4 py-1.5 rounded-lg font-semibold text-sm hover:bg-primary-container transition-transform active:scale-95">
+                Create
+            </button>
+<div class="flex items-center gap-3 ml-2">
+<button class="p-2 rounded-full hover:bg-slate-100/50 dark:hover:bg-slate-800/50 transition-colors">
+<span class="material-symbols-outlined text-[20px]">dark_mode</span>
+</button>
+<button class="p-2 rounded-full hover:bg-slate-100/50 dark:hover:bg-slate-800/50 transition-colors">
+<span class="material-symbols-outlined text-[20px]">notifications</span>
+</button>
+<div class="w-8 h-8 rounded-full bg-surface-container-highest overflow-hidden ring-2 ring-primary/10">
+<img alt="User profile" data-alt="professional headshot of a creative director in a minimalist studio setting with soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQijbhW4eCPOc_Wkrami0IBBgsgIOkcDtsRPENUook9qci7Ca4ZHyYSY5s7ydMY0el384h-wiR-wQDlRz8dQ7h-eTEp-spHAfWDTRJ7GLiGFX4J1ZZpTpm1SpryBaBefSyaNjMvXiOPVkXpmhhQ--rFPeFv5kx_ZnuK6Rm9Vh7lHAFJ0q-KLiJnzOVAt2VVU2_KlhESBGKJhQC-UTCjt0Nsh2EZoa0VjHGEkdVgHokEC76A0mmrnLeM7XBBxJOhcrVkEoRorNqobTh"/>
+</div>
+</div>
+</div>
+</nav>
+<!-- Side Navigation (Suppressed per task focus, using TopNav context) -->
+<!-- Main Content Area -->
+<main class="pt-[56px] h-screen flex flex-col">
+<!-- Filter Bar -->
+<div class="h-10 px-6 flex items-center gap-2 bg-surface-container-low/50 backdrop-blur-sm border-b border-outline-variant/10">
+<button class="px-3 py-1 rounded-full text-xs font-semibold bg-primary text-white transition-all">All</button>
+<button class="px-3 py-1 rounded-full text-xs font-semibold text-on-surface-variant hover:bg-surface-container-high transition-all">Pending</button>
+<button class="px-3 py-1 rounded-full text-xs font-semibold text-on-surface-variant hover:bg-surface-container-high transition-all">Completed</button>
+<div class="flex-grow"></div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-on-surface-variant">filter_list</span>
+<span class="font-label text-[10px] uppercase tracking-wider text-on-surface-variant">Filter</span>
+</div>
+</div>
+<!-- Board Area -->
+<div class="flex-grow overflow-x-auto p-6 flex items-start gap-6 bg-surface-container-low">
+<!-- TO DO Column -->
+<div class="flex-shrink-0 w-80 flex flex-col gap-4">
+<div class="flex items-center justify-between px-2">
+<div class="flex items-center gap-2">
+<h2 class="font-headline font-bold text-on-surface">To Do</h2>
+<span class="font-label text-xs bg-surface-container-high px-2 py-0.5 rounded-full text-on-surface-variant">4</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer">more_horiz</span>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-4 rounded-[10px] editorial-shadow group cursor-pointer hover:bg-surface-bright transition-colors">
+<div class="flex items-start justify-between mb-2">
+<div class="flex flex-wrap gap-2">
+<span class="font-label text-[10px] px-2 py-0.5 rounded bg-primary/10 text-primary uppercase tracking-tight">Design</span>
+<span class="font-label text-[10px] px-2 py-0.5 rounded bg-error/10 text-error uppercase tracking-tight font-bold">High</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-sm">check_box_outline_blank</span>
+</div>
+<h3 class="font-semibold text-on-surface leading-snug">Finalize Design System Strategy</h3>
+<div class="mt-4 flex items-center justify-between">
+<div class="flex -space-x-2">
+<div class="w-6 h-6 rounded-full ring-2 ring-surface bg-slate-200 overflow-hidden">
+<img alt="Member" data-alt="close up portrait of a smiling designer in a creative office space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKvNjfuOsVmTtMiHEvRv4IOtjhs8318JQmrM-EWWOwZIXQulZi-GwxySTp2F-tI-_tm7q-CTV8_e3d5yaGGue60qMMIHAfrX-dgEUuiUOKAkgszQpri1QlHjOr8BBLo-lXg4HGyZt-8cRGNnNvBfYNXROlSO0suwm5FZh2mNyjkjPEeDL76IfvGXZQ7pYduz9WMLU9POUU6PI1eePOD-EUkiGLrnYoc-jc_hJ5t92up2lYOA__3X93tn13bplovBVYccyhPCLL8MzN"/>
+</div>
+</div>
+<span class="font-label text-[10px] text-outline">Q4-2024</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-4 rounded-[10px] editorial-shadow group cursor-pointer hover:bg-surface-bright transition-colors">
+<h3 class="font-semibold text-on-surface leading-snug">Review Brand Anchors</h3>
+<p class="text-xs text-on-surface-variant mt-1">Audit existing shared components for casing integrity.</p>
+<div class="mt-4 flex items-center gap-3">
+<span class="material-symbols-outlined text-sm text-outline">attachment</span>
+<span class="material-symbols-outlined text-sm text-outline">chat_bubble_outline</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-4 rounded-[10px] editorial-shadow group cursor-pointer hover:bg-surface-bright transition-colors">
+<div class="flex gap-2 mb-2">
+<span class="font-label text-[10px] px-2 py-0.5 rounded bg-secondary/10 text-secondary uppercase tracking-tight">Backend</span>
+</div>
+<h3 class="font-semibold text-on-surface leading-snug">API Endpoint Documentation</h3>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-4 rounded-[10px] editorial-shadow group cursor-pointer hover:bg-surface-bright transition-colors">
+<h3 class="font-semibold text-on-surface leading-snug">Sprint Kickoff Meeting</h3>
+<div class="mt-3 flex items-center gap-2 text-on-tertiary-fixed-variant">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span class="font-label text-[10px]">14:00 Today</span>
+</div>
+</div>
+</div>
+<button class="flex items-center gap-2 px-2 py-2 text-on-surface-variant hover:text-primary transition-colors text-sm font-medium group">
+<span class="material-symbols-outlined text-lg">add</span>
+<span>Add a task</span>
+</button>
+</div>
+<!-- IN PROGRESS Column -->
+<div class="flex-shrink-0 w-80 flex flex-col gap-4">
+<div class="flex items-center justify-between px-2">
+<div class="flex items-center gap-2">
+<h2 class="font-headline font-bold text-on-surface">In Progress</h2>
+<span class="font-label text-xs bg-surface-container-high px-2 py-0.5 rounded-full text-on-surface-variant">2</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer">more_horiz</span>
+</div>
+<div class="flex flex-col gap-3">
+<div class="bg-surface-container-lowest p-4 rounded-[10px] editorial-shadow group cursor-pointer hover:bg-surface-bright transition-colors ring-2 ring-primary/20">
+<div class="flex gap-2 mb-2">
+<span class="font-label text-[10px] px-2 py-0.5 rounded bg-primary/10 text-primary uppercase tracking-tight">Dev</span>
+</div>
+<h3 class="font-semibold text-on-surface leading-snug">Implement Dark Mode Toggles</h3>
+<div class="mt-3 w-full bg-surface-container rounded-full h-1">
+<div class="bg-primary h-1 rounded-full w-[65%]"></div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-[10px] editorial-shadow group cursor-pointer hover:bg-surface-bright transition-colors">
+<h3 class="font-semibold text-on-surface leading-snug">Bento Grid Refinement</h3>
+<div class="mt-3 relative h-24 rounded-lg overflow-hidden">
+<img alt="UI Layout" class="object-cover w-full h-full grayscale opacity-50" data-alt="abstract architectural grid pattern with shadows and geometric shapes in clean white and grey tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdnRIPEXl9YpunPAxDBAW_SsEc9cyKXWeSueaFIwYo70KfGU5UiW3DVY3V8VyL4kjfavbuy5K1achj8yzj6QlNPpHZEqMVm3H5b4hjABW1JNQRyctHlTuJS_ZYlFI2CDng726P6B8-og4ZrQ9Dk2RY-koeIkRoRrvPXoi6xeqn4XgNO4EHkxHCOfG0AfSEShOqyWY36g3UDC-vITliBAryWFJOQ2QAcmq6WgrC4uq1CyQzNccxsqqRuVyovl3PxBgtmhgilBrnyvuB"/>
+<div class="absolute inset-0 bg-primary/10"></div>
+</div>
+</div>
+</div>
+<button class="flex items-center gap-2 px-2 py-2 text-on-surface-variant hover:text-primary transition-colors text-sm font-medium">
+<span class="material-symbols-outlined text-lg">add</span>
+<span>Add a task</span>
+</button>
+</div>
+<!-- DONE Column -->
+<div class="flex-shrink-0 w-80 flex flex-col gap-4">
+<div class="flex items-center justify-between px-2">
+<div class="flex items-center gap-2">
+<h2 class="font-headline font-bold text-on-surface">Done</h2>
+<span class="font-label text-xs bg-surface-container-high px-2 py-0.5 rounded-full text-on-surface-variant">5</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer">more_horiz</span>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Completed Task -->
+<div class="bg-surface-container-lowest p-4 rounded-[10px] editorial-shadow opacity-60 group cursor-pointer transition-colors">
+<div class="flex items-start justify-between mb-2">
+<div class="flex gap-2">
+<span class="font-label text-[10px] px-2 py-0.5 rounded bg-outline-variant/30 text-outline uppercase tracking-tight">Legal</span>
+</div>
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<h3 class="font-semibold text-on-surface line-through leading-snug">Privacy Policy Update</h3>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-[10px] editorial-shadow opacity-60 group cursor-pointer transition-colors">
+<h3 class="font-semibold text-on-surface line-through leading-snug">User Interview Series #12</h3>
+<div class="mt-2 flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">verified</span>
+<span class="text-[10px] font-label">Validated</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-[10px] editorial-shadow opacity-60 group cursor-pointer transition-colors">
+<h3 class="font-semibold text-on-surface line-through leading-snug">Color Palette Accessibility Audit</h3>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-[10px] editorial-shadow opacity-60 group cursor-pointer transition-colors">
+<h3 class="font-semibold text-on-surface line-through leading-snug">Asset Export for iOS</h3>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-[10px] editorial-shadow opacity-60 group cursor-pointer transition-colors">
+<h3 class="font-semibold text-on-surface line-through leading-snug">Onboarding Flow Wireframes</h3>
+</div>
+</div>
+<button class="flex items-center gap-2 px-2 py-2 text-on-surface-variant hover:text-primary transition-colors text-sm font-medium">
+<span class="material-symbols-outlined text-lg">add</span>
+<span>Add a task</span>
+</button>
+</div>
+<!-- Add Column -->
+<div class="flex-shrink-0 w-80 h-[200px] border-2 border-dashed border-outline-variant/30 rounded-xl flex items-center justify-center hover:bg-surface-container transition-colors cursor-pointer group">
+<div class="flex flex-col items-center gap-2 text-outline-variant group-hover:text-on-surface-variant">
+<span class="material-symbols-outlined text-3xl">add_box</span>
+<span class="font-headline font-bold text-sm">Add column</span>
+</div>
+</div>
+</div>
+</main>
+<!-- Side View / Detail Panel (Hidden by default, shown conceptually as an Atelier layer) -->
+<div class="hidden fixed inset-y-0 right-0 w-[480px] bg-white shadow-2xl z-[60] p-8 border-l border-outline-variant/10">
+<div class="flex items-center justify-between mb-10">
+<span class="font-label text-xs uppercase tracking-widest text-outline">Task Detail</span>
+<button class="p-2 rounded-full hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<h2 class="font-headline text-3xl font-extrabold mb-4 tracking-tight">Finalize Design System Strategy</h2>
+<div class="flex items-center gap-4 mb-8">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">person</span>
+</div>
+<span class="text-sm font-semibold">Sarah Connor</span>
+</div>
+<div class="w-[1px] h-4 bg-outline-variant/30"></div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-error">flag</span>
+<span class="text-sm font-semibold">High Priority</span>
+</div>
+</div>
+<div class="space-y-6">
+<section>
+<h4 class="font-label text-[10px] uppercase tracking-widest text-outline mb-2">Description</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                    Collaborate with the Atelier team to define the editorial direction of our new task block components. Focus on Bricolage Grotesque usage and the "no-line" surface hierarchy.
+                </p>
+</section>
+</div>
+</div>
+</body></html>
